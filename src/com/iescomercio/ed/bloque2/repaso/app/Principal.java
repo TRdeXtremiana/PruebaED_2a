@@ -5,15 +5,14 @@ import java.util.Scanner;
 import com.iescomercio.ed.bloque2.repaso.modelo.Curso;
 import com.iescomercio.ed.bloque2.repaso.modelo.Persona;
 
-
 public class Principal {
 
 	static Curso c;
-	
+
 	public static void main(String[] args) {
 		c = new Curso();
 		Integer opcion = mostrarMenuYRecogerOpcion();
-		while(opcion!=0) {
+		while (opcion != 0) {
 			procesarOpcion(opcion);
 			opcion = mostrarMenuYRecogerOpcion();
 		}
@@ -30,20 +29,20 @@ public class Principal {
 		Integer opcion = s.nextInt();
 		return opcion;
 	}
-	
+
 	public static void procesarOpcion(Integer opcion) {
 		Scanner s = new Scanner(System.in);
-		if(opcion==1) {
+		if (opcion == 1) {
 			System.out.print("Interoducir dni: ");
-			String inDNI= s.nextLine();
+			String inDNI = s.nextLine();
 			System.out.print("Interoducir nombre: ");
-			String inNombre= s.nextLine();
+			String inNombre = s.nextLine();
 			System.out.print("Interoducir apellido1: ");
-			String inApellido1= s.nextLine();
-			
+			String inApellido1 = s.nextLine();
+
 			c.aniadirAlumno(new Persona(inDNI, inNombre, inApellido1));
-			
-		}else if (opcion==2) {//eliminar
+
+		} else if (opcion == 2) {// eliminar
 			System.out.println("Introducir dni de usuario a eliminar: ");
 			String inDNI = s.nextLine().trim();
 			try {
@@ -52,22 +51,10 @@ public class Principal {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}else if(opcion==3) {//contar
+		} else if (opcion == 3) {// contar
 			System.out.println(c.numeroAlumnos());
-		}else if (opcion==4) {//todos
+		} else if (opcion == 4) {// todos
 			c.mostrarTodos();
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
