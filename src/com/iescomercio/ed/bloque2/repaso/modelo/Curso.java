@@ -61,8 +61,11 @@ public class Curso {
 		listaAlumnos = new ArrayList<Persona>();
 	}
 
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 * Devuelve el numero de alumnos basandose en la longitud de la lista
+	 * listaAlumnos. Este metodo no necesita ningun parametro de entrada
+	 * 
+	 * @return
 	 */
 	public Integer numeroAlumnos() {
 		return listaAlumnos.size();
