@@ -32,8 +32,12 @@ public class Persona {
 		return dni;
 	}
 
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 * Nos permite sobreescribir el DNI de una persona, el ultimo caracter de la
+	 * identificacion debe ser una letra
+	 * 
+	 * @param dni
+	 * @throws Exception
 	 */
 	public void setDni(String dni) throws Exception {
 		// comprobacion de si el ultimo caracter es una letra
