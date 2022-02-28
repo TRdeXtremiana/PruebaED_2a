@@ -57,8 +57,11 @@ public class Persona {
 		return nombre;
 	}
 
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 * Permite modificar el nombre de una persona introduciendo por parametro el
+	 * nombre que queremos cambiar
+	 * 
+	 * @param nombre
 	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
