@@ -53,8 +53,9 @@ public class Curso {
 		return encontrado;
 	}
 
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 * Crea una nueva lista que representa un nuevo curso, este metodo no necesita
+	 * ningun parametro de entrada
 	 */
 	public Curso() {
 		listaAlumnos = new ArrayList<Persona>();
