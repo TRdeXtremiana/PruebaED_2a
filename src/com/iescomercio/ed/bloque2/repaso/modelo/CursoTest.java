@@ -33,7 +33,6 @@ class CursoTest {
 		}
 
 	}
-	
 
 	@Test
 	void testEliminarAlumnoError() {
@@ -43,17 +42,21 @@ class CursoTest {
 
 	@Test
 	void testAniadirAlumno() {
-		fail("Not yet implemented");
+		assertEquals(c.numeroAlumnos(), 3);
 	}
 
 	@Test
 	void testEstaRegistrado() {
-		fail("Not yet implemented");
+		assertTrue(c.estaRegistrado("23456789A"));
+		assertFalse(c.estaRegistrado("12345678A"));
 	}
 
 	@Test
 	void testCurso() {
-		fail("Not yet implemented");
+		Curso a = new Curso();
+		a.aniadirAlumno(new Persona("23456789A", "J", "S"));
+
+		assertEquals(1, a.numeroAlumnos());
 	}
 
 	@Test
