@@ -33,8 +33,13 @@ public class Curso {
 		listaAlumnos.add(p);
 	}
 
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 * Comprueba si la lista listaAlumno contiene el dni de una persona que tiene
+	 * ese dni. Este metodo devolvera verdadero en caso de contener el dni
+	 * introducido, en caso contrario devolvera falso
+	 * 
+	 * @param dni
+	 * @return
 	 */
 	public Boolean estaRegistrado(String dni) {
 		int i = 0;
