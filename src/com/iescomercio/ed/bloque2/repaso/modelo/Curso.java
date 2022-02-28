@@ -23,8 +23,11 @@ public class Curso {
 		}
 	}
 
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 * Aniade un alumno a la lista listaAlumnos. Recibe el parametro de la persona
+	 * que se unira a la lista.
+	 * 
+	 * @param p
 	 */
 	public void aniadirAlumno(Persona p) {
 		listaAlumnos.add(p);
