@@ -67,8 +67,11 @@ public class Persona {
 		this.nombre = nombre;
 	}
 
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 * Devuelve el apellido de una persona. No es necesario ningun parametro de
+	 * entrada
+	 * 
+	 * @return
 	 */
 	public String getApellido1() {
 		return apellido1;
